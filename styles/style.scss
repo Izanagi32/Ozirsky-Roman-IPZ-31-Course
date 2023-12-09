@@ -756,7 +756,6 @@
     }
 
     &__links-btn {
-        text-decoration: none;
         list-style-type: none;
 
         a {
@@ -769,6 +768,7 @@
             line-height: var(--body-line-height);
             white-space: nowrap;
             font-style: var(--body-font-style);
+            text-decoration: none;
         }
     }
 
