@@ -669,6 +669,7 @@
 }
 .nav-second__links-btn {
   text-decoration: none;
+  list-style-type: none;
 }
 .nav-second__links-btn a {
   margin-top: -1px;
