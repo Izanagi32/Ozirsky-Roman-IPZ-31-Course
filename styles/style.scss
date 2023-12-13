@@ -1571,6 +1571,7 @@
     flex-direction: column;
     align-items: center;
     gap: 100px;
+    padding-bottom: 140px;
 
     &__location-form {
         width: 1312px;
@@ -1670,17 +1671,108 @@
     &__inputform {
         width: 779px;
         height: 479px;
+        display: flex;
+        flex-direction: column;
+
+            form {
+                width: 779px;
+                height: 479px;
+                gap: 20px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"] {
+                width: 380px;
+                height: 45px;
+                padding: 10px 20px;
+                border: 1px solid #F4F4F4;
+                font-family: var(--body-font-family);
+                font-weight: var(--body-font-weight);
+                color: var(--dark-grey);
+                font-size: var(--body-font-size);
+                letter-spacing: var(--body-letter-spacing);
+                line-height: var(--body-line-height);
+                white-space: nowrap;
+                font-style: var(--body-font-style);
+            }
+
+            textarea {
+                border: 1px solid #F4F4F4;
+                width: 779px;
+                height: 219px;
+                padding: 10px 20px;
+                font-family: var(--body-font-family);
+                font-weight: var(--body-font-weight);
+                color: var(--dark-grey);
+                font-size: var(--body-font-size);
+                letter-spacing: var(--body-letter-spacing);
+                line-height: var(--body-line-height);
+                white-space: nowrap;
+                font-style: var(--body-font-style);
+            }
+
+            input[type="submit"] {
+                width: 121px;
+                height: 57px;
+                border-radius: 40px;
+                background: #212529;
+                font-family: var(--body-font-family);
+                font-weight: var(--body-font-weight);
+                color: var(--white);
+                font-size: var(--body-font-size);
+                letter-spacing: var(--body-letter-spacing);
+                line-height: var(--body-line-height);
+                white-space: nowrap;
+                font-style: var(--body-font-style);
+                cursor: pointer;
+            }
     }
+
+	&__inputform-high {
+        width: 779px;
+        height: 45px;
+	}
+
+	&__inputform-medium {
+        width: 779px;
+        height: 45px;
+	}
+
+	&__inputform-caps {
+        font-family: var(--body-font-family);
+        font-weight: var(--body-font-weight);
+        color: var(--accent-85);
+        font-size: var(--body-font-size);
+        letter-spacing: var(--body-letter-spacing);
+        line-height: var(--body-line-height);
+        font-style: var(--body-font-style);   
+	}
+
+
 
     &__map {
         width: 1312px;
         height: 518px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
     }
 
     &__left-map {
+        width: 912px;
+        height: 518px;
+        border-radius: 8px;
+        background: url(../images/contactus.png), lightgray 50% / cover no-repeat;
     }
 
     &__right-img {
+        width: 380px;
+        height: 518px;
+        border-radius: 8px;
+        background: url(../images/contactus2.png), lightgray 50% / cover no-repeat;
     }
 }
 

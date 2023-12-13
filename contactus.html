@@ -65,27 +65,84 @@
 
                     <div class="section-form__inputform">
 
+                        <form action="/submit_form" method="post">
+
+                            <div class="section-form__inputform-high">
+                                <input type="text" id="name" name="name" required placeholder="Name">
+                                <input type="email" id="email" name="email" required placeholder="Email">
+                            </div>
+
+                            <div class="section-form__inputform-medium">
+                                <input type="tel" id="phone" name="phone" placeholder="Phone number">
+                                <input type="text" id="company" name="company" placeholder="Company (optional)">
+                            </div>
+
+                            <div class="section-form__inputform-low">
+                                <textarea id="message" name="message" required placeholder="Message"></textarea>
+                            </div>
+
+                            <div class="section-form__inputform-caps">
+                                <input type="checkbox" id="consent" name="consent" required>
+                                <label for="consent">I consent to Oakland C.E. processing my data for contact
+                                    purposes.</label>
+                            </div>
+                            <input type="submit" value="Send">
+                        </form>
                     </div>
-
                 </div>
-
             </div>
-
             <div class="section-form__map">
-
                 <div class="section-form__left-map">
-
                 </div>
-
                 <div class="section-form__right-img">
-
                 </div>
-
             </div>
-
         </section>
-
     </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__tag">
+                <div class="footer__column">
+                    <h3 class="footer__column-title">Pages</h3>
+                    <ul class="footer__column-list">
+                        <li class="footer__column-item"><a href="/services" class="footer__column-link">Services</a>
+                        </li>
+                        <li class="footer__column-item"><a href="/about" class="footer__column-link">About us</a></li>
+                        <li class="footer__column-item"><a href="/portfolio" class="footer__column-link">Portfolio</a>
+                        </li>
+                        <li class="footer__column-item"><a href="/contact" class="footer__column-link">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__column-center">
+                    <h3 class="footer__column-title">Social Media</h3>
+                    <ul class="footer__column-list">
+                        <li class="footer__column-item"><a href="https://www.facebook.com"
+                                class="footer__column-link">Facebook</a></li>
+                        <li class="footer__column-item"><a href="https://www.linkedin.com"
+                                class="footer__column-link">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column-end">
+                    <h3 class="footer__column-title">Legal</h3>
+                    <ul class="footer__column-list">
+                        <li class="footer__column-item"><a href="/privacy" class="footer__column-link">Privacy and
+                                Cookies Policy</a></li>
+                        <li class="footer__column-item"><a href="/terms" class="footer__column-link">Termos e
+                                Condições</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__column-img">
+                <img src="./images/footer.png" alt="ISO 9001" class="footer__column-certification">
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__bottom-text">Oakland -Energy Consulting ©</p>
+            <p class="footer__bottom-text-none">Design by Ferréh</p>
+        </div>
+    </footer>
 
 
 </body>
