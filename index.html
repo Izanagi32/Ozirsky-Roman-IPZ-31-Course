@@ -20,7 +20,7 @@
           meet your needs.</p>
         <a class="hero__btn">View Our Portfolio</a>
       </div>
-      <img class="hero__img">
+      <div class="header__img-hero"></div>
       <div class="header__nav">
         <div class="logo">
           <img class="logo__img" src="./images/logo.png">
@@ -70,17 +70,16 @@
 
     <section class="block-info">
       <div class="block-info__container">
-        <div class="block-info__back"></div>
         <div class="block-info__content">
           <img class="block-info__image" src="images/section2.1.jpg">
           <div class="block-info_text-all">
             <h2 class="block-info__title">Deep knowledge in the field</h2>
             <p class="block-info__description">Our extensive experience and deep expertise in the energy sector have
-              positioned us as leaders in <br>the industry. With two decades of market leadership, we have honed our
-              knowledge in energy efficiency, <br> LED lighting, photovoltaic energy, and electric mobility to a level
+              positioned us as leaders in the industry. With two decades of market leadership, we have honed our
+              knowledge in energy efficiency, LED lighting, photovoltaic energy, and electric mobility to a level
               that
-              sets us apart. Our team's <br> profound understanding of these domains enables us to provide innovative,
-              tailored solutions that <br> not only meet but exceed the expectations of our clients.</p>
+              sets us apart. Our team's profound understanding of these domains enables us to provide innovative,
+              tailored solutions that not only meet but exceed the expectations of our clients.</p>
             <div class="block-info__click">
               <a class="block-info__button" href="#">Learn more →</a>
             </div>
@@ -99,7 +98,7 @@
           reach out. We're here to listen, <br> collaborate, and provide you with tailored solutions that
           align
           with your specific needs and goals.</p>
-        <a class="contact-home__link" href="#">Contact us →</a>
+        <button id="openModalButton" class="contact-home__link" href="#">Contact us →</button>
       </div>
     </section>
   </main>
@@ -146,6 +145,49 @@
       <p class="footer__bottom-text-none">Design by Ferréh</p>
     </div>
   </footer>
+  <script src="../js/script.js"></script>
 </body>
+<div id="modalBackdrop" class="modal-backdrop"></div>
+
+<div class="modal close-box" data-modal="" bis_skin_checked="1">
+  <div class="modal__content">
+    <h2 class="modal__title-text">
+      <span>Задати питання</span>
+      <button class="modal__svg" data-modal-close="" type="button">
+      </button>
+    </h2>
+
+    <form class="modal__form" action="#" method="post">
+      <div class="modal__form-group">
+        <input type="text" id="name" class="modal__input" name="name" placeholder="Ім'я" />
+      </div>
+
+      <div class="modal__form-group modal__form-group--required">
+        <input type="tel" id="phone" class="modal__input" name="phone" required placeholder="Номер телефона*" />
+      </div>
+
+      <div class="modal__form-group modal__form-group--required">
+        <input type="email" id="email" class="modal__input" name="email" required placeholder="E-mail*" />
+      </div>
+
+      <div class="modal__form-group">
+        <input type="text" id="product" class="modal__input" name="product" placeholder="Товар, який цікавить Вас" />
+      </div>
+
+      <div class="modal__form-group modal__form-group--required">
+        <textarea id="message" class="modal__textarea" name="message" required placeholder="Повідомлення"
+          style="resize: none;"></textarea>
+      </div>
+
+      <div class="modal__form-group modal__form-group--checkbox">
+        <input type="checkbox" id="agreement" class="modal__checkbox" name="agreement" />
+        <label for="agreement" class="modal__label modal__label--checkbox">Надсилаючи заявку Ви погоджуєтесь
+          з політикою конфіденційності</label>
+      </div>
+
+      <button type="submit" class="modal__button">Відправити</button>
+    </form>
+  </div>
+</div>
 
 </html>
