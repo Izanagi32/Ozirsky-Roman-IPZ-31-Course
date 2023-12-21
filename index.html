@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oakland Energy</title>
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/nullstyle.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/nullstyle.css">
 </head>
 
 <body>
@@ -45,17 +45,15 @@
         <p class="expertise__par">Whether for small or large-scale projects, we are committed to delivering
           cutting-edge results, <br> contributing to a more sustainable and innovative energy future.</p>
         <div class="expertise__container-mini">
-          <div class="expertise__item expertise__item--1">
-            <h3>Energy Efficiency</h3>
-          </div>
-          <div class="expertise__item expertise__item--2">
-            <h3>LED Lighting</h3>
-          </div>
-          <div class="expertise__item expertise__item--3">
-            <h3>Photovoltaic Energy</h3>
-          </div>
-          <div class="expertise__item expertise__item--4">
-            <h3>Electric Mobility</h3>
+          <div class="slider">
+            <div class="slider__wrapper">
+              <div class="slider__item"><img src="images/section1.jpg" alt="Slide 1" class="slider__image"></div>
+              <div class="slider__item"><img src="images/slider1.jpg" alt="Slide 2" class="slider__image"></div>
+              <div class="slider__item"><img src="images/section3.jpg" alt="Slide 3" class="slider__image"></div>
+              <div class="slider__item"><img src="images/section4.jpg" alt="Slide 4" class="slider__image"></div>
+            </div>
+            <button class="slider__button slider__button--prev">←</button>
+            <button class="slider__button slider__button--next">→</button>
           </div>
         </div>
 
@@ -71,7 +69,7 @@
     <section class="block-info">
       <div class="block-info__container">
         <div class="block-info__content">
-          <img class="block-info__image" src="images/section2.1.jpg">
+          <img class="block-info__image" src="./images/section2.1.jpg">
           <div class="block-info_text-all">
             <h2 class="block-info__title">Deep knowledge in the field</h2>
             <p class="block-info__description">Our extensive experience and deep expertise in the energy sector have
@@ -145,7 +143,8 @@
       <p class="footer__bottom-text-none">Design by Ferréh</p>
     </div>
   </footer>
-  <script src="../js/script.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 <div id="modalBackdrop" class="modal-backdrop"></div>
 
