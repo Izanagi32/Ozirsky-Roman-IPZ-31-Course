@@ -622,6 +622,11 @@
         align-items: flex-start;
         justify-content: flex-end;
         gap: 8px;
+
+        @media (max-width:900px) {
+            max-width: 175px;
+            width: 100%;
+        }
 	}
 
 
@@ -1409,6 +1414,12 @@
             display: flex;
             justify-content: center;
             gap: 30px;
+          }
+
+          @media (max-width:370px) {
+            display: flex;
+            align-items: flex-start;
+            
           }
     }
 

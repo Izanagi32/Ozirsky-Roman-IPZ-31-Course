@@ -559,6 +559,12 @@
   justify-content: flex-end;
   gap: 8px;
 }
+@media (max-width: 900px) {
+  .footer__column-list {
+    max-width: 175px;
+    width: 100%;
+  }
+}
 .footer__column-item a {
   margin-top: -1px;
   color: var(--white);
@@ -1274,6 +1280,12 @@
     display: flex;
     justify-content: center;
     gap: 30px;
+  }
+}
+@media (max-width: 370px) {
+  .portfolio-section__content {
+    display: flex;
+    align-items: flex-start;
   }
 }
 .portfolio-section__value-item {
