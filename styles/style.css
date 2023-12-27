@@ -1128,6 +1128,7 @@
   .header-portfolio__nav-header {
     padding: 15px 50px;
     background-color: black;
+    height: 95px;
   }
 }
 .header-portfolio__logo {
@@ -1160,9 +1161,19 @@
   font-size: 21.1px;
   letter-spacing: 0;
 }
+@media (max-width: 900px) {
+  .header-portfolio__logo-high-word {
+    font-size: 17px;
+  }
+}
 .header-portfolio__logo-top-word {
   font-weight: 300;
   font-size: 20px;
+}
+@media (max-width: 900px) {
+  .header-portfolio__logo-top-word {
+    font-size: 17px;
+  }
 }
 .header-portfolio__nav-links {
   display: inline-flex;

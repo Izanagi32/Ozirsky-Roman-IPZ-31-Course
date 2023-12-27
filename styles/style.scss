@@ -1252,6 +1252,7 @@
         @media (max-width:900px) {
             padding: 15px 50px;
             background-color: black;
+            height: 95px;
         }
     }
 
@@ -1287,11 +1288,19 @@
         color: #ffffff;
         font-size: 21.1px;
         letter-spacing: 0;
+
+        @media (max-width: 900px) {
+            font-size: 17px;
+        }
     }
 
 	&__logo-top-word {
         font-weight: 300;
         font-size: 20px;
+
+        @media (max-width: 900px) {
+            font-size: 17px;
+        }
 	}
 
     &__nav-links {
