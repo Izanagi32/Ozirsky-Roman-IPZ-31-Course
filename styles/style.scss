@@ -257,14 +257,26 @@
             line-height: var(--body-line-height);
             white-space: nowrap;
             font-style: var(--body-font-style);
+            background-color: #ffffff4c;
+            border-radius: 40px;
+            padding: 16px 40px;
+            transition: 400ms;
+
+            &:hover {
+                background-color: #2e4686;
+                color: #fff;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Підсилення тіні при наведенні */
+              }
         }
     }
 
     &__links-btnm {
+        transition: 400ms;
         a {
             background-color: #ffffff4c;
             border-radius: 40px;
             padding: 16px 40px;
+            transition: 400ms;
         }
     }
 
@@ -384,6 +396,12 @@
         }
     }
 }
+
+.swiper-slide {
+    width: 400px !important; 
+    height: 400px;
+}
+
 
 
 .block-info {
@@ -728,6 +746,13 @@
             line-height: var(--body-line-height);
             white-space: nowrap;
             font-style: var(--body-font-style);
+            transition: 400ms;
+
+            &:hover {
+                background-color: #2e4686;
+                border-radius: 40px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
+              }
         }
     }
 
@@ -875,6 +900,16 @@
             white-space: nowrap;
             font-style: var(--body-font-style);
             text-decoration: none;
+            background-color: #0000004c;
+            border-radius: 40px;
+            padding: 16px 40px;
+            transition: 400ms;
+
+            &:hover {
+                background-color: #2e4686;
+                color: #fff;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Підсилення тіні при наведенні */
+              }
         }
     }
 
@@ -889,6 +924,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: 400ms;
+
+        &:hover {
+            background-color: #2e4686;
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Підсилення тіні при наведенні */
+          }
 
         a {
             margin-top: -1px;
@@ -1459,6 +1501,16 @@
             white-space: nowrap;
             font-style: var(--body-font-style);
             text-decoration: none;
+            border-radius: 40px;
+            padding: 16px 40px;
+            transition: 400ms;
+            background-color: #ffffff4c;
+
+            &:hover {
+                background-color: #2e4686;
+                color: #fff;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Підсилення тіні при наведенні */
+              }
         }
     }
 
@@ -1473,6 +1525,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: 400ms;
+
+        &:hover {
+            background-color: #2e4686;
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Підсилення тіні при наведенні */
+          }
 
         a {
             margin-top: -1px;
@@ -1484,6 +1543,7 @@
             line-height: var(--body-line-height);
             white-space: nowrap;
             font-style: var(--body-font-style);
+
     }
 }
 }
@@ -1827,9 +1887,4 @@
               }
         }
     }
-}
-
-.swiper-slide {
-    width: 400px !important; 
-    height: 400px;
 }
